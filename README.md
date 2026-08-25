@@ -18,15 +18,9 @@ npm run preview  # preview the build
 
 ## Live site
 
-The site deploys automatically to **GitHub Pages** on every push to `main`:
+This repo deploys to **GitHub Pages** on every push to `main` (enable **Settings → Pages → Source → GitHub Actions** if it is not on already):
 
-**https://sayanth-confio.github.io/suhaib-vp-portfolio/**
-
-If the first deploy fails, open the repo → **Settings → Pages → Source** and choose **GitHub Actions**.
-
-### Want a cleaner free URL?
-
-[Vercel](https://vercel.com) is the nicest free host for this Vite app (`your-name.vercel.app`, HTTPS, no `/portfolio_new` path). Import `Suhaibvp/portfolio_new` — `vercel.json` is already in the repo.
+**https://suhaibvp.github.io/portfolio_new/**
 
 ## Fill in missing details
 
