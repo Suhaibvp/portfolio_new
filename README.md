@@ -20,7 +20,7 @@ npm run preview  # preview the build
 
 The site deploys automatically to **GitHub Pages** on every push to `main`:
 
-**https://suhaibvp.github.io/portfolio_new/**
+**https://sayanth-confio.github.io/suhaib-vp-portfolio/**
 
 If the first deploy fails, open the repo → **Settings → Pages → Source** and choose **GitHub Actions**.
 
