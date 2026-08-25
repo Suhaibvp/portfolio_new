@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0c0d10" />
+    <meta
+      name="description"
+      content="Suhaib VP — Android developer in Bengaluru. Native Kotlin apps for IoT, automotive, and sports. Immediate joiner."
+    />
+    <meta property="og:title" content="Suhaib VP · Android Developer" />
+    <meta
+      property="og:description"
+      content="Production Android for devices that live in the real world — BLE, GPS, cameras, and cloud."
+    />
+    <meta property="og:type" content="website" />
+    <title>Suhaib VP · Android Developer</title>
+    <script>
+      try {
+        const saved = localStorage.getItem('theme')
+        const theme =
+          saved === 'light' || saved === 'dark'
+            ? saved
+            : window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark'
+        document.documentElement.dataset.theme = theme
+        document.querySelector('meta[name="theme-color"]')?.setAttribute(
+          'content',
+          theme === 'light' ? '#f2eee6' : '#0c0d10',
+        )
+      } catch {
+        /* keep default dark */
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@360;420;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
