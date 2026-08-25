@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { profile } from '../content'
 import { Magnetic } from './Magnetic'
-import { SignalField } from './SignalField'
+import { TelemetryCore } from './TelemetryCore'
 
 export function Hero() {
   const [index, setIndex] = useState(0)
@@ -16,7 +16,7 @@ export function Hero() {
 
   return (
     <section className="hero wrap" id="top">
-      <SignalField />
+      <TelemetryCore />
       <div className="hero-copy">
         <motion.p
           className="eyebrow"
@@ -64,7 +64,7 @@ export function Hero() {
             Start a conversation
           </Magnetic>
         </div>
-        <p className="scroll-hint">Scroll — the field follows you</p>
+        <p className="scroll-hint">Move the pointer — the mesh follows you</p>
       </div>
     </section>
   )

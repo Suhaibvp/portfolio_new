@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { experience } from '../content'
 import { Reveal } from './Reveal'
+import { Tilt } from './Tilt'
 
 export function Work() {
   const [openId, setOpenId] = useState(experience[0]?.projects[0]?.id ?? '')
@@ -27,8 +28,8 @@ export function Work() {
               {role.projects.map((project) => {
                 const open = openId === project.id
                 return (
+                  <Tilt key={project.id} disabled={open} strength={5}>
                   <button
-                    key={project.id}
                     type="button"
                     className={`project${open ? ' is-open' : ''}`}
                     onClick={() => setOpenId(open ? '' : project.id)}
@@ -64,6 +65,7 @@ export function Work() {
                       </div>
                     </div>
                   </button>
+                  </Tilt>
                 )
               })}
             </div>
