@@ -11,3 +11,8 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
+.gh-suhaib
+
+# Ajna's portfolio is its own repository
+ajna-portfolio/
+Fathima_Ajna_A_Resume*.pdf
